@@ -1,0 +1,19 @@
+.claude
+.nuxt
+.nuxt/
+.output
+dist
+node_modules
+node_modules/
+.DS_Store
+*.log
+*.env
+.env
+
+# Piper TTS models (downloaded via npm run setup)
+tts-server/models/*.onnx
+tts-server/models/*.onnx.json
+
+# Python
+__pycache__
+*.pyc

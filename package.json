@@ -1,0 +1,21 @@
+{
+  "name": "personal-assistant",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "dev:tts": "python3 -u tts-server/server.py",
+    "dev:all": "npx concurrently --names nuxt,tts --prefix-colors blue,green \"npm run dev\" \"npm run dev:tts\"",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "setup": "npm install && pip3 install -r tts-server/requirements.txt && bash tts-server/download-models.sh"
+  },
+  "dependencies": {
+    "marked": "^17.0.1",
+    "nuxt": "^4.3.0",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4"
+  }
+}
